@@ -59,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */,
+				BD4F835C2C51E17E00851AF8 /* Resource */,
+				BD4F835B2C51E15900851AF8 /* Model */,
 				BD4F834C2C51DF5F00851AF8 /* ContentView.swift */,
 				BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */,
-				BD4F83502C51DF6000851AF8 /* Assets.xcassets */,
 				BD4F83552C51DF6000851AF8 /* Info.plist */,
 				BD4F83522C51DF6000851AF8 /* Preview Content */,
 			);
@@ -82,6 +83,21 @@
 				BD4F83532C51DF6000851AF8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD4F835B2C51E15900851AF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD4F835C2C51E17E00851AF8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F83502C51DF6000851AF8 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
