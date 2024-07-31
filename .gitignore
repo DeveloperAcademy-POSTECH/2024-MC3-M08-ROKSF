@@ -98,5 +98,6 @@ RealityKitContent.rkassets/
 Package.realitycomposerpro
 Package.swift
 .swiftpm/
+*.mov
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,swiftpm,xcode,cocoapods

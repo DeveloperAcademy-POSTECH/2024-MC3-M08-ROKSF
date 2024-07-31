@@ -6,19 +6,26 @@ struct VolumeView: View {
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
 
-    var scale: Float = 1
-    var position: SIMD3<Float> = .zero
-
     @State var objectVolumeName: String
 
     var body: some View {
-        RealityView { content in
-            // Load the 3D object from a Reality file or a USDZ file
-            if let scene = try? await Entity(named: objectVolumeName, in: realityKitContentBundle) {
-                content.add(scene)
+        ZStack {
+            RealityView { content in
+                if let scene = try? await Entity(named: objectVolumeName, in: realityKitContentBundle) {
+                    content.add(scene)
+
+                    guard let resource = try? await EnvironmentResource(named: "ImageBasedLight") else { return }
+                    let iblComponent = ImageBasedLightComponent(source: .single(resource), intensityExponent: 0.25)
+                    scene.components.set(iblComponent)
+                    scene.components.set(ImageBasedLightReceiverComponent(imageBasedLight: scene))
+                }
+            } update: { content in
             }
-        } update: { content in
+            .installGestures()
+            .offset(y: 500)
+
+            VolumeControlView()
+                .offset(y: 550)
         }
-        .installGestures()
     }
 }

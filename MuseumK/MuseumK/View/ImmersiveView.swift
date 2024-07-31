@@ -11,14 +11,22 @@ import RealityKitContent
 
 struct ImmersiveView: View {
     @Environment(\.openWindow) var openWindow
+    @Environment(\.dismissWindow) var dismissWindow
     @State private var location: CGPoint = .zero
     @Binding var selectedObject: ROKObjectModel
 
+    @EnvironmentObject var model: SelectedRoomModel
+
     var body: some View {
         RealityView { content in
-            if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                // Add TapComponent to entities in the scene
+            if let scene = try? await Entity(named: "\(model.roomName)", in: realityKitContentBundle) {
+                print(model.roomName)
                 content.add(scene)
+
+                guard let resource = try? await EnvironmentResource(named: "ImageBasedLight") else { return }
+                let iblComponent = ImageBasedLightComponent(source: .single(resource), intensityExponent: 0.25)
+                scene.components.set(iblComponent)
+                scene.components.set(ImageBasedLightReceiverComponent(imageBasedLight: scene))
             }
         }
         .hoverEffect()
@@ -31,10 +39,14 @@ struct ImmersiveView: View {
             if let object = findObjectByCaptionName(captionName: name) {
                 selectedObject = object
             }
-
-            openWindow(id: "Commentary")
-            openWindow(id: "Control")
+            dismissWindow(id: "ContentManage")
+            openWindow(id: "ContentManage")
         }))
+        .onAppear {
+            dismissWindow(id: "Entering")
+            dismissWindow(id: "ContentManage")
+            dismissWindow(id: "Volume")
+        }
     }
 
     func findObjectByCaptionName(captionName: String) -> ROKObjectModel? {

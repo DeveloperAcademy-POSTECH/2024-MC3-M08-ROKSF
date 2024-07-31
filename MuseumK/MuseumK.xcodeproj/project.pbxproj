@@ -7,39 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1275532C5F772500DD7364 /* SwordVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = BD1275522C5F772500DD7364 /* SwordVideo.mov */; };
+		BD1275552C5F777B00DD7364 /* VaseVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = BD1275542C5F777B00DD7364 /* VaseVideo.mov */; };
+		BD1275572C5F802100DD7364 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1275562C5F802100DD7364 /* SoundManager.swift */; };
+		BD16292B2C5F973C0083FBDE /* HoguSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD16292A2C5F973C0083FBDE /* HoguSound.mp3 */; };
+		BD16292D2C5F97450083FBDE /* VaseSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD16292C2C5F97450083FBDE /* VaseSound.mp3 */; };
+		BD16292F2C5F974C0083FBDE /* SwordSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD16292E2C5F974C0083FBDE /* SwordSound.mp3 */; };
+		BD1629312C5F97520083FBDE /* BurnerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD1629302C5F97520083FBDE /* BurnerSound.mp3 */; };
+		BD255B872C62180300ECC967 /* VolumeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD255B862C62180300ECC967 /* VolumeControlView.swift */; };
 		BD297F982C54CB1E00BCBDDD /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD297F972C54CB1E00BCBDDD /* PosterView.swift */; };
+		BD2ED7C42C59DFAA005EE8D9 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2ED7C32C59DFAA005EE8D9 /* VideoPlayerView.swift */; };
+		BD2ED7C62C59E356005EE8D9 /* HoguVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = BD2ED7C52C59E356005EE8D9 /* HoguVideo.mov */; };
+		BD2ED7C82C5A3B77005EE8D9 /* BurnerVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = BD2ED7C72C5A3B77005EE8D9 /* BurnerVideo.mov */; };
+		BD2ED7CD2C5A506B005EE8D9 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = BD2ED7CC2C5A506B005EE8D9 /* Markdown */; };
+		BD2ED7CF2C5A50BE005EE8D9 /* DocentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2ED7CE2C5A50BE005EE8D9 /* DocentView.swift */; };
 		BD3FE74E2C57CAED004C6CB3 /* ROKObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */; };
 		BD4F83492C51DF5F00851AF8 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BD4F83482C51DF5F00851AF8 /* RealityKitContent */; };
 		BD4F834B2C51DF5F00851AF8 /* MuseumKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */; };
-		BD4F834D2C51DF5F00851AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834C2C51DF5F00851AF8 /* ContentView.swift */; };
+		BD4F834D2C51DF5F00851AF8 /* EnteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834C2C51DF5F00851AF8 /* EnteringView.swift */; };
 		BD4F834F2C51DF5F00851AF8 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */; };
 		BD4F83512C51DF6000851AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4F83502C51DF6000851AF8 /* Assets.xcassets */; };
 		BD4F83542C51DF6000851AF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4F83532C51DF6000851AF8 /* Preview Assets.xcassets */; };
+		BD57460E2C5C7FE0009F96DF /* ContentManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57460D2C5C7FE0009F96DF /* ContentManageView.swift */; };
+		BD5746102C5CACC1009F96DF /* SelectedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57460F2C5CACC1009F96DF /* SelectedContent.swift */; };
+		BDAEEB072C5FB78100E1498F /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = BDAEEB062C5FB78100E1498F /* ImageBasedLighting.skybox */; };
 		BDE3BF192C54A2F800F10218 /* CommentaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3BF182C54A2F800F10218 /* CommentaryView.swift */; };
 		BDEFD1372C58B0DC00390EF7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */; };
 		BDEFD1392C58B0F300390EF7 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD1382C58B0F300390EF7 /* RoomModel.swift */; };
-		BDEFD13D2C58BBC200390EF7 /* MapWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */; };
 		BDEFD13F2C59163600390EF7 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD13E2C59163600390EF7 /* VolumeView.swift */; };
-		BDF959122C54BF8A00AEDAE3 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF959112C54BF8A00AEDAE3 /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD1275522C5F772500DD7364 /* SwordVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = SwordVideo.mov; sourceTree = "<group>"; };
+		BD1275542C5F777B00DD7364 /* VaseVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VaseVideo.mov; sourceTree = "<group>"; };
+		BD1275562C5F802100DD7364 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		BD16292A2C5F973C0083FBDE /* HoguSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HoguSound.mp3; sourceTree = "<group>"; };
+		BD16292C2C5F97450083FBDE /* VaseSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VaseSound.mp3; sourceTree = "<group>"; };
+		BD16292E2C5F974C0083FBDE /* SwordSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SwordSound.mp3; sourceTree = "<group>"; };
+		BD1629302C5F97520083FBDE /* BurnerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BurnerSound.mp3; sourceTree = "<group>"; };
+		BD255B862C62180300ECC967 /* VolumeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlView.swift; sourceTree = "<group>"; };
 		BD297F972C54CB1E00BCBDDD /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
+		BD2ED7C32C59DFAA005EE8D9 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		BD2ED7C52C59E356005EE8D9 /* HoguVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = HoguVideo.mov; sourceTree = "<group>"; };
+		BD2ED7C72C5A3B77005EE8D9 /* BurnerVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = BurnerVideo.mov; sourceTree = "<group>"; };
+		BD2ED7CE2C5A50BE005EE8D9 /* DocentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocentView.swift; sourceTree = "<group>"; };
 		BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROKObjectModel.swift; sourceTree = "<group>"; };
 		BD4F83432C51DF5F00851AF8 /* MuseumK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4F83472C51DF5F00851AF8 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumKApp.swift; sourceTree = "<group>"; };
-		BD4F834C2C51DF5F00851AF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD4F834C2C51DF5F00851AF8 /* EnteringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringView.swift; sourceTree = "<group>"; };
 		BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		BD4F83502C51DF6000851AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD4F83532C51DF6000851AF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD4F83552C51DF6000851AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD57460D2C5C7FE0009F96DF /* ContentManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManageView.swift; sourceTree = "<group>"; };
+		BD57460F2C5CACC1009F96DF /* SelectedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedContent.swift; sourceTree = "<group>"; };
+		BDAEEB062C5FB78100E1498F /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; name = ImageBasedLighting.skybox; path = MuseumK/ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		BDE3BF182C54A2F800F10218 /* CommentaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentaryView.swift; sourceTree = "<group>"; };
 		BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		BDEFD1382C58B0F300390EF7 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
-		BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapWindow.swift; sourceTree = "<group>"; };
 		BDEFD13E2C59163600390EF7 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
-		BDF959112C54BF8A00AEDAE3 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4F83492C51DF5F00851AF8 /* RealityKitContent in Frameworks */,
+				BD2ED7CD2C5A506B005EE8D9 /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +85,7 @@
 		BD4F833A2C51DF5F00851AF8 = {
 			isa = PBXGroup;
 			children = (
+				BDAEEB062C5FB78100E1498F /* ImageBasedLighting.skybox */,
 				BD4F83452C51DF5F00851AF8 /* MuseumK */,
 				BD4F83462C51DF5F00851AF8 /* Packages */,
 				BD4F83442C51DF5F00851AF8 /* Products */,
@@ -106,6 +135,8 @@
 				BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */,
 				BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */,
 				BDEFD1382C58B0F300390EF7 /* RoomModel.swift */,
+				BD57460F2C5CACC1009F96DF /* SelectedContent.swift */,
+				BD1275562C5F802100DD7364 /* SoundManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +144,14 @@
 		BD4F835C2C51E17E00851AF8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BD16292A2C5F973C0083FBDE /* HoguSound.mp3 */,
+				BD1629302C5F97520083FBDE /* BurnerSound.mp3 */,
+				BD16292E2C5F974C0083FBDE /* SwordSound.mp3 */,
+				BD16292C2C5F97450083FBDE /* VaseSound.mp3 */,
+				BD2ED7C52C59E356005EE8D9 /* HoguVideo.mov */,
+				BD2ED7C72C5A3B77005EE8D9 /* BurnerVideo.mov */,
+				BD1275522C5F772500DD7364 /* SwordVideo.mov */,
+				BD1275542C5F777B00DD7364 /* VaseVideo.mov */,
 				BD4F83502C51DF6000851AF8 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -121,13 +160,15 @@
 		BDE3BF172C54A25F00F10218 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BD4F834C2C51DF5F00851AF8 /* ContentView.swift */,
+				BD4F834C2C51DF5F00851AF8 /* EnteringView.swift */,
 				BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */,
 				BDE3BF182C54A2F800F10218 /* CommentaryView.swift */,
-				BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */,
-				BDF959112C54BF8A00AEDAE3 /* ControlView.swift */,
 				BD297F972C54CB1E00BCBDDD /* PosterView.swift */,
 				BDEFD13E2C59163600390EF7 /* VolumeView.swift */,
+				BD2ED7C32C59DFAA005EE8D9 /* VideoPlayerView.swift */,
+				BD2ED7CE2C5A50BE005EE8D9 /* DocentView.swift */,
+				BD57460D2C5C7FE0009F96DF /* ContentManageView.swift */,
+				BD255B862C62180300ECC967 /* VolumeControlView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +191,7 @@
 			name = MuseumK;
 			packageProductDependencies = (
 				BD4F83482C51DF5F00851AF8 /* RealityKitContent */,
+				BD2ED7CC2C5A506B005EE8D9 /* Markdown */,
 			);
 			productName = MuseumK;
 			productReference = BD4F83432C51DF5F00851AF8 /* MuseumK.app */;
@@ -179,6 +221,9 @@
 				Base,
 			);
 			mainGroup = BD4F833A2C51DF5F00851AF8;
+			packageReferences = (
+				BD2ED7CB2C5A506B005EE8D9 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+			);
 			productRefGroup = BD4F83442C51DF5F00851AF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,8 +238,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2ED7C82C5A3B77005EE8D9 /* BurnerVideo.mov in Resources */,
+				BD16292F2C5F974C0083FBDE /* SwordSound.mp3 in Resources */,
+				BD2ED7C62C59E356005EE8D9 /* HoguVideo.mov in Resources */,
 				BD4F83542C51DF6000851AF8 /* Preview Assets.xcassets in Resources */,
+				BD16292D2C5F97450083FBDE /* VaseSound.mp3 in Resources */,
+				BD1275552C5F777B00DD7364 /* VaseVideo.mov in Resources */,
+				BD1629312C5F97520083FBDE /* BurnerSound.mp3 in Resources */,
+				BD16292B2C5F973C0083FBDE /* HoguSound.mp3 in Resources */,
 				BD4F83512C51DF6000851AF8 /* Assets.xcassets in Resources */,
+				BD1275532C5F772500DD7364 /* SwordVideo.mov in Resources */,
+				BDAEEB072C5FB78100E1498F /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,17 +259,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD4F834D2C51DF5F00851AF8 /* ContentView.swift in Sources */,
+				BD5746102C5CACC1009F96DF /* SelectedContent.swift in Sources */,
+				BD4F834D2C51DF5F00851AF8 /* EnteringView.swift in Sources */,
 				BDEFD13F2C59163600390EF7 /* VolumeView.swift in Sources */,
 				BDEFD1392C58B0F300390EF7 /* RoomModel.swift in Sources */,
+				BD2ED7CF2C5A50BE005EE8D9 /* DocentView.swift in Sources */,
+				BD1275572C5F802100DD7364 /* SoundManager.swift in Sources */,
 				BDE3BF192C54A2F800F10218 /* CommentaryView.swift in Sources */,
 				BD3FE74E2C57CAED004C6CB3 /* ROKObjectModel.swift in Sources */,
 				BD4F834B2C51DF5F00851AF8 /* MuseumKApp.swift in Sources */,
-				BDEFD13D2C58BBC200390EF7 /* MapWindow.swift in Sources */,
+				BD255B872C62180300ECC967 /* VolumeControlView.swift in Sources */,
+				BD57460E2C5C7FE0009F96DF /* ContentManageView.swift in Sources */,
 				BD4F834F2C51DF5F00851AF8 /* ImmersiveView.swift in Sources */,
 				BDEFD1372C58B0DC00390EF7 /* MenuItem.swift in Sources */,
 				BD297F982C54CB1E00BCBDDD /* PosterView.swift in Sources */,
-				BDF959122C54BF8A00AEDAE3 /* ControlView.swift in Sources */,
+				BD2ED7C42C59DFAA005EE8D9 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +472,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		BD2ED7CB2C5A506B005EE8D9 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "ssh://git@github.com/apple/swift-markdown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		BD2ED7CC2C5A506B005EE8D9 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD2ED7CB2C5A506B005EE8D9 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
 		BD4F83482C51DF5F00851AF8 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;

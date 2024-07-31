@@ -14,22 +14,32 @@ struct PosterView: View {
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
 
+    @EnvironmentObject var model: SelectedRoomModel
+
     var body: some View {
         NavigationStack {
             VStack {
                 ExhibitionHeader()
                 scrollView()
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 28)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.bottom, 50)
+            .onChange(of: immersiveSpaceIsShown) { _, newValue in
+                Task {
+                    if model.isImmersiveOn == true {
+                        await dismissImmersiveSpace()
+                    }
+                    model.isImmersiveOn = true
+                    await openImmersiveSpace(id: "ImmersiveSpace")
+                }
+            }
         }
     }
 
-    // Header
     private func ExhibitionHeader() -> some View {
         HStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Exhibition")
                     .font(.system(size: 34))
                     .fontWeight(.bold)
@@ -39,17 +49,16 @@ struct PosterView: View {
                     .fontWeight(.bold)
                     .opacity(0.6)
             }
-            .padding(.top, 50)
+            .padding(.top, 30)
             .padding(.leading, 16)
             Spacer()
         }
     }
 
-    // Scroll View
     private func scrollView() -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
-                ForEach(rooms) { room in
+            LazyHStack(spacing: 16) {
+                ForEach(rooms, id: \.id) { room in
                     posterView(for: room)
                 }
             }
@@ -57,12 +66,23 @@ struct PosterView: View {
         .padding(.top, 16)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-
-    // Poster Item View
+    
     private func posterView(for room: Room) -> some View {
         VStack {
             Button(action: {
-                showImmersiveSpace.toggle()
+                if model.isImmersiveOn == true {
+                    if model.roomName != room.immersiveName {
+                        DispatchQueue.main.async {
+                            model.roomName = room.immersiveName
+                        }
+                        immersiveSpaceIsShown.toggle()
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        model.roomName = room.immersiveName
+                    }
+                    immersiveSpaceIsShown.toggle()
+                }
             }) {
                 ZStack(alignment: .bottom) {
                     posterBackground(for: room)
@@ -71,43 +91,19 @@ struct PosterView: View {
             }
             .buttonStyle(.plain)
             .buttonBorderShape(.roundedRectangle(radius: 10))
-            .disabled(room.isLocked)  // 비활성화된 방은 클릭할 수 없도록 설정
-            Text(room.name)
-                .font(.system(size: 24, weight: .bold))
-                .opacity(0.5)
-                .padding(.top, 8)
-        }
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                    case .opened:
-                        dismissWindow(id: "Content")
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        fallthrough
-                    @unknown default:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
-                }
-            }
+            .disabled(room.isLocked)
         }
     }
 
-    // Poster Background
     private func posterBackground(for room: Room) -> some View {
         Group {
             if room.isLocked {
-                ZStack {
+                ZStack() {
                     Rectangle()
                         .fill(Color.black)
                         .opacity(0.1)
                         .frame(width: 327, height: 388)
-                        .cornerRadius(10)
+                        .cornerRadius(17)
                     Image(room.imageName)
                         .resizable()
                         .frame(width: 90, height: 97)
@@ -118,21 +114,21 @@ struct PosterView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 327, height: 388)
-                    .cornerRadius(10)
+                    .clipShape(RoundedRectangle(cornerRadius: 17))
             }
         }
     }
 
-    // Poster Overlay
     private func posterOverlay(for room: Room) -> some View {
         ZStack {
             Rectangle()
                 .fill(Color.black)
                 .opacity(0.3)
                 .frame(width: 327, height: 100)
-                .cornerRadius(10)
+                .cornerRadius(17)
             Text(room.title)
                 .font(.system(size: 24))
+                .fontWeight(.bold)
                 .foregroundColor(.white)
                 .padding(.vertical, 8)
                 .opacity(0.8)
@@ -140,8 +136,3 @@ struct PosterView: View {
     }
 }
 
-
-// Preview
-#Preview {
-    PosterView()
-}
