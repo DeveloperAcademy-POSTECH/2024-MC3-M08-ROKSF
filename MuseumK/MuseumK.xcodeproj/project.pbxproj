@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD297F982C54CB1E00BCBDDD /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD297F972C54CB1E00BCBDDD /* PosterView.swift */; };
+		BD3FE74E2C57CAED004C6CB3 /* ROKObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */; };
 		BD4F83492C51DF5F00851AF8 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BD4F83482C51DF5F00851AF8 /* RealityKitContent */; };
 		BD4F834B2C51DF5F00851AF8 /* MuseumKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */; };
 		BD4F834D2C51DF5F00851AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834C2C51DF5F00851AF8 /* ContentView.swift */; };
 		BD4F834F2C51DF5F00851AF8 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */; };
 		BD4F83512C51DF6000851AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4F83502C51DF6000851AF8 /* Assets.xcassets */; };
 		BD4F83542C51DF6000851AF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4F83532C51DF6000851AF8 /* Preview Assets.xcassets */; };
+		BDE3BF192C54A2F800F10218 /* CommentaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3BF182C54A2F800F10218 /* CommentaryView.swift */; };
+		BDEFD1372C58B0DC00390EF7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */; };
+		BDEFD1392C58B0F300390EF7 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD1382C58B0F300390EF7 /* RoomModel.swift */; };
+		BDEFD13D2C58BBC200390EF7 /* MapWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */; };
+		BDEFD13F2C59163600390EF7 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEFD13E2C59163600390EF7 /* VolumeView.swift */; };
+		BDF959122C54BF8A00AEDAE3 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF959112C54BF8A00AEDAE3 /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD297F972C54CB1E00BCBDDD /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
+		BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROKObjectModel.swift; sourceTree = "<group>"; };
 		BD4F83432C51DF5F00851AF8 /* MuseumK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4F83472C51DF5F00851AF8 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumKApp.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		BD4F83502C51DF6000851AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD4F83532C51DF6000851AF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD4F83552C51DF6000851AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE3BF182C54A2F800F10218 /* CommentaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentaryView.swift; sourceTree = "<group>"; };
+		BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		BDEFD1382C58B0F300390EF7 /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapWindow.swift; sourceTree = "<group>"; };
+		BDEFD13E2C59163600390EF7 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		BDF959112C54BF8A00AEDAE3 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				BD4F834A2C51DF5F00851AF8 /* MuseumKApp.swift */,
+				BDE3BF172C54A25F00F10218 /* View */,
 				BD4F835C2C51E17E00851AF8 /* Resource */,
 				BD4F835B2C51E15900851AF8 /* Model */,
-				BD4F834C2C51DF5F00851AF8 /* ContentView.swift */,
-				BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */,
 				BD4F83552C51DF6000851AF8 /* Info.plist */,
 				BD4F83522C51DF6000851AF8 /* Preview Content */,
 			);
@@ -88,6 +103,9 @@
 		BD4F835B2C51E15900851AF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BDEFD1362C58B0DC00390EF7 /* MenuItem.swift */,
+				BD3FE74D2C57CAED004C6CB3 /* ROKObjectModel.swift */,
+				BDEFD1382C58B0F300390EF7 /* RoomModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +116,20 @@
 				BD4F83502C51DF6000851AF8 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		BDE3BF172C54A25F00F10218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F834C2C51DF5F00851AF8 /* ContentView.swift */,
+				BD4F834E2C51DF5F00851AF8 /* ImmersiveView.swift */,
+				BDE3BF182C54A2F800F10218 /* CommentaryView.swift */,
+				BDEFD13C2C58BBC200390EF7 /* MapWindow.swift */,
+				BDF959112C54BF8A00AEDAE3 /* ControlView.swift */,
+				BD297F972C54CB1E00BCBDDD /* PosterView.swift */,
+				BDEFD13E2C59163600390EF7 /* VolumeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +206,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4F834D2C51DF5F00851AF8 /* ContentView.swift in Sources */,
+				BDEFD13F2C59163600390EF7 /* VolumeView.swift in Sources */,
+				BDEFD1392C58B0F300390EF7 /* RoomModel.swift in Sources */,
+				BDE3BF192C54A2F800F10218 /* CommentaryView.swift in Sources */,
+				BD3FE74E2C57CAED004C6CB3 /* ROKObjectModel.swift in Sources */,
 				BD4F834B2C51DF5F00851AF8 /* MuseumKApp.swift in Sources */,
+				BDEFD13D2C58BBC200390EF7 /* MapWindow.swift in Sources */,
 				BD4F834F2C51DF5F00851AF8 /* ImmersiveView.swift in Sources */,
+				BDEFD1372C58B0DC00390EF7 /* MenuItem.swift in Sources */,
+				BD297F982C54CB1E00BCBDDD /* PosterView.swift in Sources */,
+				BDF959122C54BF8A00AEDAE3 /* ControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
