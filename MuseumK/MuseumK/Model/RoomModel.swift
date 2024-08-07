@@ -13,12 +13,13 @@ struct Room: Identifiable {
     var imageName: String
     var title: String
     var isLocked: Bool
+    var immersiveName: String
 }
 
 // Room 데이터 모델 배열 정의
-let rooms = [
-    Room(name: "Room A", imageName: "HoguImage", title: "Shilla Royal Runner ‘ Hogu ’", isLocked: false),
-    Room(name: "Room B", imageName: "LatchImage", title: "", isLocked: true),
-    Room(name: "Room C", imageName: "LatchImage", title: "", isLocked: true),
-    Room(name: "Room D", imageName: "LatchImage", title: "", isLocked: true)
+var rooms = [
+    Room(name: "Room A", imageName: "KoreaPos", title: "고려관", isLocked: false, immersiveName: "Immersive"),
+    Room(name: "Room B", imageName: "ShinraPos", title: "신라관", isLocked: false, immersiveName: "Immersive2"),
+    Room(name: "Room C", imageName: "LatchImage", title: "", isLocked: true, immersiveName: ""),
+    Room(name: "Room D", imageName: "LatchImage", title: "", isLocked: true, immersiveName: "")
 ]

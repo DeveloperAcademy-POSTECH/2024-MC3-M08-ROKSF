@@ -2,7 +2,7 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
-struct ContentView: View {
+struct EnteringView: View {
     var body: some View {
         NavigationStack {
             ZStack {
@@ -13,7 +13,6 @@ struct ContentView: View {
         }
     }
 
-    // 바탕이미지
     private func backgroundView() -> some View {
         Image("TitleImage")
             .resizable()
@@ -23,14 +22,13 @@ struct ContentView: View {
             .clipped()
     }
 
-    // 타이틀
     private func titleView() -> some View {
         HStack(alignment: .top){
             VStack(alignment: .leading) {
                 Text("Museum K")
                     .font(.system(size: 74.91))
                     .bold()
-                    .padding(.top, 200)
+                    .padding(.top, 180)
 
                 Text("Experience the Korean Traditional Museum")
                     .font(.system(size: 25))
@@ -39,7 +37,6 @@ struct ContentView: View {
             }
             .padding(.leading, 58)
             .padding(.bottom, 100)
-            .padding(.trailing, 300)
             Spacer()
         }
 
@@ -62,8 +59,4 @@ struct ContentView: View {
             .padding(.bottom, 200)
         }
     }
-}
-
-#Preview(windowStyle: .automatic) {
-    ContentView()
 }

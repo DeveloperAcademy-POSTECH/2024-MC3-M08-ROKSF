@@ -16,23 +16,25 @@ struct MuseumKApp: App {
 
     @State private var style: ImmersionStyle = .full
     @State var selectedObject: ROKObjectModel = Objects[0]
-    
+
+    @StateObject private var selectedRoomModel = SelectedRoomModel()
+
     var body: some Scene {
-        WindowGroup(id: "Content") {
-            ContentView()
+        WindowGroup(id: "Entering") {
+            EnteringView()
+                .environmentObject(selectedRoomModel)
         }
+        .windowResizability(.contentSize)
 
-        WindowGroup(id: "Control") {
-            ControlView()
+        WindowGroup(id: "ContentManage") {
+            ContentManageView(selectedObject: selectedObject)
+                .environmentObject(selectedRoomModel)
         }
-        .defaultSize(width: 377, height: 90)
-
-        WindowGroup(id: "Commentary", content: {
-            CommentaryView(object: selectedObject)
-        })
+        .windowResizability(.contentSize)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView(selectedObject: $selectedObject)
+                .environmentObject(selectedRoomModel)
         }
         .immersionStyle(selection: $style, in: .full)
 
@@ -40,12 +42,7 @@ struct MuseumKApp: App {
             VolumeView(objectVolumeName: selectedObject.volumeID)
         }
         .windowStyle(.volumetric)
-        .defaultSize(width: 2, height: 1.75, depth: 1, in: .meters)
-
-
-        WindowGroup(id: "Map") {
-            MapView()
-        }
-        .defaultSize(width: 546, height: 430)
+        .windowResizability(.contentSize)
+        
     }
 }

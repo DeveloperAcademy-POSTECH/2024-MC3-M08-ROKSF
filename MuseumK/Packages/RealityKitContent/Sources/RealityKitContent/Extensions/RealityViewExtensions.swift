@@ -1,11 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-App-specific extension on RealityView.
-*/
-
-import Foundation
 import RealityKit
 import SwiftUI
 

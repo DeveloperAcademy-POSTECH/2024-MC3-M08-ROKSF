@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-A component that handles standard drag, rotate, and scale gestures for an entity.
-*/
-
 import RealityKit
 import SwiftUI
 
