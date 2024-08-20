@@ -1,11 +1,8 @@
-# :iphone: [Museum K]
-[Logo/Cover Image]
+# 🥽 Museum K
+![Title](https://github.com/user-attachments/assets/21b8523e-bd78-4898-9790-061f0a8cf2ed)
 
-[App statement]
+An app that creates a realistic space in VisionOS, creating a moment where you can immerse yourself in the work without distractions
 
-## :fireworks: Screenshots
-
-Attach photos if you are available
 
 ## :framed_picture: Demo (optional)
 
@@ -16,10 +13,14 @@ https://github.com/user-attachments/assets/09de2ef4-a941-40a1-8063-c9db48b8c7b9
 
 ## :pushpin: Features
 
-- Feature 1
-- Feature 2
-- Feature 3
-
+- Select the exhibition hall you want to see
+  ![Simulator Screenshot - Apple Vision Pro - 2024-08-09 at 15 57 13](https://github.com/user-attachments/assets/c128d059-d3f4-4bfe-8a19-cfe91b1b0435)
+- View Exhibitions in immersive space
+  ![Simulator Screenshot - Apple Vision Pro - 2024-08-09 at 15 59 05](https://github.com/user-attachments/assets/76769562-f990-474c-94c3-0f62ea5a0a8d)
+- Exhibition viewing with various commentary
+  ![Simulator Screenshot - Apple Vision Pro - 2024-08-09 at 15 59 22](https://github.com/user-attachments/assets/4f715314-0780-4f6e-bf99-a86534074937)
+- Object Size and Rotation Function with Volume Window
+  <img width="1368" alt="스크린샷 2024-08-07 오후 5 45 00" src="https://github.com/user-attachments/assets/320f08c1-016e-4680-be44-4b52e408bae8">
 
 ## :sparkles: Skills & Tech Stack
 
@@ -31,4 +32,8 @@ https://github.com/user-attachments/assets/09de2ef4-a941-40a1-8063-c9db48b8c7b9
 ## :people_hugging: Authors
 ![people 001](https://github.com/user-attachments/assets/43057f83-f363-4abc-81f2-4445b8ae4de8)
 
-@seoyounghan, @username, @username, @username, @username, @username
+[Tanya](https://github.com/seoyounghan)
+[Skylar](https://github.com/Skylar0817)
+[Faker](https://github.com/Skylar0817)
+[Bada](https://github.com/BADAapple2024)
+[Gogo](https://github.com/GOGO987)
