@@ -4,6 +4,11 @@
 An app that creates a realistic space in VisionOS, creating a moment where you can immerse yourself in the work without distractions
 
 
+## 🔥 Download
+We didn't upload the 3d asset on GitHub. Please send me an email if you want to download it.
+email: seun785@naver.com
+
+
 ## :framed_picture: Demo (optional)
 
 
@@ -37,3 +42,4 @@ https://github.com/user-attachments/assets/09de2ef4-a941-40a1-8063-c9db48b8c7b9
 [Faker](https://github.com/Skylar0817)
 [Bada](https://github.com/BADAapple2024)
 [Gogo](https://github.com/GOGO987)
+
